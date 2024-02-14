@@ -7,7 +7,7 @@ const PeopleRouter = require("./controllers/people") //new
 const app = express();
 
 //middleware
-app.unsubscribe(cors())
+app.use(cors())
 app.use(morgan("dev"))
 app.use(express.json()) //this middleware allows us to send JSON request with our request
 
